@@ -61,7 +61,7 @@ const trials = {
             type: jsPsychAudioKeyboardResponse,
             choices: ['d', 'k'],
             stimulus: jsPsych.timelineVariable('stimulus'), // read corresponding information from timeline_variables
-            response_allowed_while_playing: false,
+            response_allowed_while_playing: true,
             response_ends_trial: false,
             trial_duration: 3000, // participants can response after audio onset, the trial will proceed after 2s irregardless of response
             prompt: `<div class=\"option_container\"><div class=\"option\">
