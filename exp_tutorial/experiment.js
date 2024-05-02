@@ -2,9 +2,9 @@
 const jsPsych = initJsPsych({
     show_progress_bar: true, // the automatic progress bar calculates the total number of trials as the length of the timeline. We'll need to manually update the progress
     auto_update_progress_bar: false, 
-    on_finish: function () {
-        jsPsych.data.displayData('csv'); // results will be displayed at the end of the experiment
-      }
+    on_finish: function(data) {
+        proliferate.submit({"trials": data.values()});
+    }
   });
 
 // timeline will be used to define which type of trials will be run at a given point during the experiment 
