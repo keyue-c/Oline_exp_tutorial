@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- link the CSS file you made-->
+        <link href="experiment.css" rel="stylesheet" type="text/css" />
+
+        <!-- Tell the file to run some .js files -->
+        <script src="util.js"></script>
+
+        <!-- basic jsPsych functionality -->
+        <script src="jspsych/dist/jspsych.js"></script>
+        <!-- default jsPsych stylesheet -->
+        <link href="jspsych/dist/jspsych.css" rel="stylesheet" type="text/css" />
+
+        <!-- add plugin to the HTML file, plugin can achieve different functions -->
+        <script src="jspsych/dist/plugin-preload.js"></script>
+        <script src="jspsych/dist/plugin-html-button-response.js"></script>
+        <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+        <script src="jspsych/dist/plugin-audio-keyboard-response.js"></script>
+        <script src="jspsych/dist/plugin-survey.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@jspsych/plugin-survey@0.2.1/css/survey.css">
+
+        <!-- load trials -->
+        <script src="trials.js"></script>
+
+        <!-- add js file functions, jsPsych and plugin should be loaded first -->
+        <script src="experiment.js"></script>
+
+        <!-- This is the name that will appear on the browser tab. -->
+        <title>Language Experiment</title>
+
+    </head>
+</html>
